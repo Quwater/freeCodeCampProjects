@@ -1,35 +1,96 @@
 html,
 body {
-    background-color: #a9d7d1;
-    box-sizing: border-box;
-    text-align: center;
+    color: white;
     font-family: 'Raleway', Helvetica, sans-serif;
+    font-size: 16px;
     min-width: 320px;
-    background-image: linear-gradient(
+}
+
+body {
+    box-sizing: border-box;
+    background: linear-gradient(
             115deg,
-            rgba(58, 58, 158, 0.8),
+            rgba(3, 3, 5, 0.8),
             rgba(136, 136, 206, 0.7)
         ),
         url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
 }
 
+body * + * {
+    margin-top: 1.5em;
+}
+
 #title {
-    color: white;
     font-weight: 400;
     line-height: 1.2;
+    text-align: center;
     margin: 2em auto;
 }
 
 #description {
-    color: white;
     font-style: italic;
     font-weight: 200;
+    text-align: center;
     margin-top: -3rem;
 }
 
 #form-outer {
     width: 100%;
     background-color: rgba(27, 27, 50, 0.7);
-    padding: 2.5rem 0.625rem;
+    padding: 2.5em 0.625em;
     border-radius: 0.5rem;
+}
+
+@media (max-width: 750px) and (min-width: 550px) {
+    #form-outer {
+        width: 550px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 750px) {
+    #form-outer {
+        width: 750px;
+        margin: 0 auto;
+        padding: 2em;
+    }
+}
+
+.labels {
+    font-size: 1.3rem;
+}
+
+.answer {
+    margin-top: 0.5em;
+}
+
+.answer input:not([type='checkbox']):not([type='radio']) {
+    display: block;
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+.answer select {
+    display: block;
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+.answer ul {
+    padding-left: 0;
+}
+
+.answer textarea {
+    width: 100%;
+    font-size: 1.2rem;
+    height: 5em;
+}
+
+#submit {
+    width: 100%;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #37af65;
+    padding: 0.5em 0;
+    border-radius: 5px;
 }
