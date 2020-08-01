@@ -14,6 +14,9 @@ body {
             rgba(136, 136, 206, 0.7)
         ),
         url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 body * + * {
