@@ -1,0 +1,14 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #4d4e53;
+}
